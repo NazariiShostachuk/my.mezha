@@ -10,16 +10,19 @@ import HomePage from "./components/HomePage";
 import PrivacyPolicyPage from "./components/PrivacyPolicyPage";
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <HomePage />,
-    },
-    {
-      path: "/privacy",
-      element: <PrivacyPolicyPage />,
-    },
-  ]);
+  const router = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/privacy",
+        element: <PrivacyPolicyPage />,
+      },
+    ],
+    { basename: "/my.mezha" }
+  );
 
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
