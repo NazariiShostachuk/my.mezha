@@ -1,12 +1,20 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Box, Container, Typography, Button, Paper } from "@mui/material";
+import {
+  Box,
+  Container,
+  Typography,
+  Button,
+  Paper,
+  useMediaQuery,
+} from "@mui/material";
 import Copyright from "./Copyright";
 import screenshot from "../images/screenshot.jpeg";
 import badge from "../images/badge.png";
 
 function HomePage() {
   const navigate = useNavigate();
+  const matches = useMediaQuery("(min-width:768px)");
 
   return (
     <Container component="main" maxWidth="lg" sx={{ mb: 4 }}>
@@ -14,7 +22,7 @@ function HomePage() {
         elevation={24}
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: matches ? "row" : "column",
           alignItems: "center",
           my: { xs: 3, md: 6 },
           p: { xs: 2, md: 3 },
@@ -22,25 +30,37 @@ function HomePage() {
       >
         <Box
           sx={{
-            width: "50%",
+            width: matches ? "50%" : "100%",
+            marginBottom: "30px",
           }}
         >
-          <Typography variant="h2" component="h1" gutterBottom>
+          <Typography
+            variant="h2"
+            component="h1"
+            gutterBottom
+            align={matches ? "left" : "center"}
+          >
             My Mezha
           </Typography>
-          <Typography variant="h5" component="h2" gutterBottom>
+          <Typography
+            variant="h5"
+            component="h2"
+            gutterBottom
+            align={matches ? "left" : "center"}
+          >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           </Typography>
           <Box
             sx={{
               display: "flex",
-              flexDirection: "row",
+              flexDirection: matches ? "row" : "column",
+              alignItems: "center",
             }}
           >
             <Button
               sx={{
-                width: "30%",
-                height: "60px",
+                width: "50%",
+                height: "100px",
                 backgroundImage: `url(${badge})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "contain",
@@ -58,7 +78,7 @@ function HomePage() {
         </Box>
         <Box
           sx={{
-            width: "50%",
+            width: matches ? "50%" : "70%",
             height: "70vh",
             backgroundImage: `url(${screenshot})`,
             backgroundRepeat: "no-repeat",

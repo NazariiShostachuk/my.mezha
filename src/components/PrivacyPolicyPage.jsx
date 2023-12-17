@@ -18,7 +18,7 @@ function PrivacyPolicyPage() {
         <Typography variant="h2" component="h2" gutterBottom>
           Privacy Policy
         </Typography>
-        <Typography variant="body1" component="p" gutterBottom>
+        <Typography variant="body1" component="div" gutterBottom>
           <p>
             DEVELOPER!!! built the NAME!!! app as a Free app. This SERVICE is
             provided by DEVELOPER!!! at no cost and is intended for use as is.
