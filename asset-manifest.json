@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my.mezha/static/css/main.7060b0ed.css",
-    "main.js": "/my.mezha/static/js/main.f680888d.js",
+    "main.js": "/my.mezha/static/js/main.fca5b5a6.js",
     "static/media/screenshot.jpeg": "/my.mezha/static/media/screenshot.174c6a07653d3ca99652.jpeg",
     "static/media/roboto-latin-500-normal.woff2": "/my.mezha/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/my.mezha/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
@@ -61,10 +61,10 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/my.mezha/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/my.mezha/index.html",
     "main.7060b0ed.css.map": "/my.mezha/static/css/main.7060b0ed.css.map",
-    "main.f680888d.js.map": "/my.mezha/static/js/main.f680888d.js.map"
+    "main.fca5b5a6.js.map": "/my.mezha/static/js/main.fca5b5a6.js.map"
   },
   "entrypoints": [
     "static/css/main.7060b0ed.css",
-    "static/js/main.f680888d.js"
+    "static/js/main.fca5b5a6.js"
   ]
 }
